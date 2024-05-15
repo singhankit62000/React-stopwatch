@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stopwatch {
+    margin: 100px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.display {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.controls button {
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    min-width: 125px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.5s ease;
+    font-weight: bold;
+}
+
+.start-button {
+    background-color: hsl(120, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(120, 100%, 35%);
+    }
+}
+
+.stop-button {
+    background-color: hsl(10, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(10, 100%, 35%);
+    }
+}
+
+.lap-button {
+    background-color: hsl(35, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(35, 100%, 35%);
+    }
+}
+
+.reset-button {
+    background-color: hsl(220, 100%, 40%);
+
+    &:hover {
+        background-color: hsl(220, 100%, 35%);
+    }
+}
+
+.lap-container {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.lap-time {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px 4px rgb(190, 190, 189);
+}
